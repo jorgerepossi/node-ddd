@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 
-import { GetAllUserUseCase } from "../../application/use-cases/getAllUserUseCase";
-import { UserEntity } from "../../domain/user.entity";
+import type { GetAllUserUseCase } from "../../application/use-cases/getAllUserUseCase";
+import type { UserEntity } from "../../domain/user.entity";
 import { UserNotFound } from "../../domain/errors/user-not-found";
 
 export class GetAllUserController {

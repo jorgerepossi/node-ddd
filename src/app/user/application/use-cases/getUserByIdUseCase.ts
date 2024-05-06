@@ -1,5 +1,5 @@
-import { UserRepository } from "../../domain/user.repository";
-import { UserEntity } from "../../domain/user.entity";
+import type { UserRepository } from "../../domain/user.repository";
+import type { UserEntity } from "../../domain/user.entity";
 import { UserNotFound } from "../../domain/errors/user-not-found";
 
 export class GetUserByIdUseCase {

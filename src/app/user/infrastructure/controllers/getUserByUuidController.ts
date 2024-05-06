@@ -1,8 +1,8 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 
-import { GetUserByIdUseCase } from "../../application/use-cases/getUserByIdUseCase";
+import type { GetUserByIdUseCase } from "../../application/use-cases/getUserByIdUseCase";
+import type { UserEntity } from "../../domain/user.entity";
 import { UserNotFound } from "../../domain/errors/user-not-found";
-import { UserEntity } from "../../domain/user.entity";
 
 export class GetUserByUuidController {
 	constructor(private readonly getUserByUuidUseCase: GetUserByIdUseCase) {}

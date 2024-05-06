@@ -1,5 +1,5 @@
-import { UserRepository } from "../../domain/user.repository";
-import { UserEntity } from "../../domain/user.entity";
+import type { UserRepository } from "../../domain/user.repository";
+import type { UserEntity } from "../../domain/user.entity";
 import { UserValue } from "../../domain/user.value";
 import { ErrorCreatedUser } from "../../domain/errors/error-created-user";
 
