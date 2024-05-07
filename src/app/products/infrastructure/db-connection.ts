@@ -1,4 +1,4 @@
-import { Pool, PoolClient } from "pg";
+import { Pool, type PoolClient } from "pg";
 
 export class DBConnection {
 	private pool: Pool;

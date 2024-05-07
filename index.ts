@@ -15,5 +15,5 @@ app.use(cors());
 app.use("/products", productRouter);
 
 app.listen(process.env.PORT || "4001", () =>
-	console.log("Server is running " + process.env.PORT || "4001"),
+	console.log(`Server·is·running·${process.env.PORT}` || "4001"),
 );

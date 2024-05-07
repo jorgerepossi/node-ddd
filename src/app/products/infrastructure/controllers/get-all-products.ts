@@ -1,11 +1,11 @@
 import type { Response, Request } from "express";
-import { ProductGetAll } from "../../application/product-get-all";
-import { Product } from "../../domain/product";
+import type { ProductGetAll } from "../../application/product-get-all";
+import type { Product } from "../../domain/product";
 
 export class GetAllProductsController {
 	constructor(private readonly getAllProducts: ProductGetAll) {}
 
-	async run(req: Request, res: Response) {
+	async run(_: Request, res: Response) {
 		try {
 			const product: Product[] = await this.getAllProducts.run();
 			res.json(product);

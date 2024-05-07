@@ -1,5 +1,5 @@
 import type { Response, Request } from "express";
-import { ProductDeleteById } from "../../application/product-delete-by-id";
+import type { ProductDeleteById } from "../../application/product-delete-by-id";
 
 export class DeleteByIdController {
 	constructor(private readonly productByIdDelete: ProductDeleteById) {}

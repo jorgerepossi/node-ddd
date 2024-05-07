@@ -2,8 +2,9 @@ import dotenv from "dotenv";
 
 import type { ProductRepository } from "../domain/product-repository";
 import { Product } from "../domain/product";
-import { PoolClient } from "pg";
-import { DBConnection } from "./db-connection";
+import type { PoolClient } from "pg";
+
+import type { DBConnection } from "./db-connection";
 
 import uniqid from "uniqid";
 

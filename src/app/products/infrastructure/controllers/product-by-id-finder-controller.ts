@@ -1,7 +1,7 @@
 import type { Response, Request } from "express";
 
-import { ProductByIdFinder } from "../../application/product-by-id-finder";
-import { Product } from "../../domain/product";
+import type { ProductByIdFinder } from "../../application/product-by-id-finder";
+import type { Product } from "../../domain/product";
 import { NotFound } from "../../domain/not-found";
 
 export class ProductByIdFinderController {

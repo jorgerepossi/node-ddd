@@ -1,7 +1,7 @@
 import type { ProductRepository } from "../domain/product-repository";
+import type { Product } from "../domain/product";
 
 import { NotFound } from "../domain/not-found";
-import { Product } from "../domain/product";
 
 export class ProductByIdFinder {
 	constructor(private readonly productRepository: ProductRepository) {}

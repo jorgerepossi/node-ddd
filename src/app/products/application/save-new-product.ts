@@ -1,6 +1,6 @@
 import type { ProductRepository } from "../domain/product-repository";
 
-import { Product } from "../domain/product";
+import type { Product } from "../domain/product";
 
 export class SaveNewProduct {
 	constructor(private readonly productRepository: ProductRepository) {}

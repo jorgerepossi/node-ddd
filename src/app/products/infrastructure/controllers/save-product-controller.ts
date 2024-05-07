@@ -1,8 +1,8 @@
 import type { Response, Request } from "express";
 
-import { Product } from "../../domain/product";
+import type { Product } from "../../domain/product";
 
-import { SaveNewProduct } from "../../application/save-new-product";
+import type { SaveNewProduct } from "../../application/save-new-product";
 
 export class SaveProductController {
 	constructor(private readonly saveProduct: SaveNewProduct) {}
