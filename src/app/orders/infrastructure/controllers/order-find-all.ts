@@ -1,6 +1,6 @@
 import type { Response, Request } from "express";
 
-import { Order } from "../../domain/order";
+import type { Order } from "../../domain/order";
 import { OrderFindAllUseCase } from "../../application/order.find-all.usecase";
 
 // received from the application and application layer

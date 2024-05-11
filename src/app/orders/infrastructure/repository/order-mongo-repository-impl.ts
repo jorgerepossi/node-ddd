@@ -1,8 +1,8 @@
-import { Order } from "../../domain/order";
-import { DBConnection } from "./db-connection";
 import { ObjectId } from "mongodb";
+import type { DBConnection } from "./db-connection";
+import { Order } from "../../domain/order";
 
-import { OrderRepository } from "../../domain/order-repository";
+import type { OrderRepository } from "../../domain/order-repository";
 
 export class OrderMongoRepositoryImpl implements OrderRepository {
 	constructor(private dbConnection: DBConnection) {}

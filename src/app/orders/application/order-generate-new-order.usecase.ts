@@ -1,4 +1,4 @@
-import { OrderRepository } from "../domain/order-repository";
+import type { OrderRepository } from "../domain/order-repository";
 import { Order } from "../domain/order";
 
 export class GenerateNewOrderUseCase {

@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import { GenerateNewOrderUseCase } from "../../application/order-generate-new-order.usecase";
-import { Order } from "../../domain/order";
+import type { Order } from "../../domain/order";
 
 export class OrderNewOrderController {
 	constructor(private readonly generateNewOrder: GenerateNewOrderUseCase) {}
