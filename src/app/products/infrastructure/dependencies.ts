@@ -1,8 +1,8 @@
 import { ProductByIdFinderController } from "./controllers/product-by-id-finder-controller";
-import { ProductPostgresRepositoryImpl } from "./product-postgres-repository-impl";
+import { ProductPostgresRepositoryImpl } from "./repository/product-postgres-repository-impl";
 import { ProductByIdFinder } from "../application/product-by-id-finder";
 
-import { DBConnection } from "./db-connection";
+import { DBConnection } from "./repository/db-connection";
 import { SaveNewProduct } from "../application/save-new-product";
 import { SaveProductController } from "./controllers/save-product-controller";
 import { ProductGetAll } from "../application/product-get-all";

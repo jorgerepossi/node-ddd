@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 
-import type { ProductRepository } from "../domain/product-repository";
-import { Product } from "../domain/product";
+import type { ProductRepository } from "../../domain/product-repository";
+import { Product } from "../../domain/product";
 import type { PoolClient } from "pg";
 
 import type { DBConnection } from "./db-connection";

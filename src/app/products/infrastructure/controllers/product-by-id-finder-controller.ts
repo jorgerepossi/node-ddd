@@ -11,7 +11,7 @@ export class ProductByIdFinderController {
 		try {
 			const id: string = req.params.id;
 			const product: Product | null = await this.productByIdFinder.run(id);
-			res.json(product);
+			res.json({ data: product });
 		} catch (error) {
 			if (error instanceof NotFound) {
 				res.status(404).json({ message: error.message });

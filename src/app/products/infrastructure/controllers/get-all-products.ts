@@ -8,7 +8,7 @@ export class GetAllProductsController {
 	async run(_: Request, res: Response) {
 		try {
 			const product: Product[] = await this.getAllProducts.run();
-			res.json(product);
+			res.json({ data: { product: product } });
 		} catch (error) {
 			res.status(500).json({ message: "Internal server error 500" });
 		}
